@@ -6,8 +6,14 @@ def say_something(word=None):
         print(f"I was saying,'{word}'")
 
 def main():
+
     word = input("Say something: ")
-    say_something(word)
+    #if empty string assign word no value
+    if word == '':
+        say_something(word=None)
+    else:
+        
+        say_something(word)
 
 if __name__ == "__main__":
     main()
